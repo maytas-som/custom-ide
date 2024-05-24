@@ -1,6 +1,6 @@
 schemaVersion: 2.2.2
 metadata:
-  name: java-lombok
+  name: test-devfile-v1
 projects:
   - name: lombok-project-sample
     zip:
