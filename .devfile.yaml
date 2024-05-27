@@ -1,15 +1,11 @@
 schemaVersion: 2.2.2
 metadata:
   name: test-devfile-v1
-projects:
-  - name: lombok-project-sample
-    zip:
-      location: http://devfile-registry.openshift-operators.svc:8080/resources/v2/lombok-project-sample.zip[]
 components:
   - name: tools
     container:
-      image: registry.redhat.io/devspaces/udi-rhel8@sha256:b34b7d8422abb6135cbb85726949c2c52aaf854d6b1c89f6f327ddb54c8b97a5
-      memoryLimit: 4Gi
+      image: registry.redhat.io/devspaces/udi-rhel8:3.12
+      memoryLimit: 6Gi
       memoryRequest: 2Gi
       cpuLimit: '4'
       cpuRequest: '1'
