@@ -1,7 +1,7 @@
-- id: che-incubator/che-idea/latest
-  override:
-    containers:
-      - name: che-idea
-        memoryLimit: 4Gi
-        cpuLimit: 3
-        cpuRequest: 1
+id: che-incubator/che-idea/latest
+override:
+  containers:
+    - name: che-idea
+      memoryLimit: 4Gi
+      cpuLimit: 3
+      cpuRequest: 1

@@ -5,9 +5,9 @@ components:
   - name: tools
     container:
       image: registry.redhat.io/devspaces/udi-rhel8:3.12
-      memoryLimit: 6Gi
+      memoryLimit: 3Gi
       memoryRequest: 2Gi
-      cpuLimit: '4'
+      cpuLimit: '3'
       cpuRequest: '1'
       endpoints:
         - exposure: none
