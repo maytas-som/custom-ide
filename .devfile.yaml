@@ -14,9 +14,9 @@ components:
           name: debug
           protocol: tcp
           targetPort: 5005
-      volumeMounts:
-        - name: jetbrains
-          path: /home/user/.jetbrains
+#      volumeMounts:
+#        - name: jetbrains
+#          path: /home/user/.jetbrains
   - name: jetbrains
     volume:
       size: 8G
