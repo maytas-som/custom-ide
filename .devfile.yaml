@@ -5,21 +5,21 @@ components:
   - name: tools
     container:
       image: registry.redhat.io/devspaces/udi-rhel8:3.12
-      memoryLimit: 3Gi
-      memoryRequest: 2Gi
-      cpuLimit: '3'
-      cpuRequest: '1'
+      memoryLimit: 12Gi
+      memoryRequest: 4Gi
+      cpuLimit: '6'
+      cpuRequest: '2'
       endpoints:
         - exposure: none
           name: debug
           protocol: tcp
           targetPort: 5005
       volumeMounts:
-        - name: gradle
-          path: /home/user/.gradle
-  - name: gradle
+        - name: jetbrains
+          path: /home/user/.jetbrains
+  - name: jetbrains
     volume:
-      size: 16G
+      size: 8G
 #commands:
 #  - id: build
 #    exec:
